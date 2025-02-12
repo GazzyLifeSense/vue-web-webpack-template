@@ -1,6 +1,6 @@
 // webpack.common.js 用于公共配置
-const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const CopyWebpackPlugin = require("copy-webpack-plugin")
 const { VueLoaderPlugin } = require("vue-loader")
 const ProgressBarPlugin = require("progress-bar-webpack-plugin")
 const path = require("path")
@@ -8,6 +8,7 @@ console.log(process.env.NODE_ENV)
 
 module.exports = {
   output: {
+    publicPath: "/",
     filename: "js/chunk-[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
@@ -34,6 +35,7 @@ module.exports = {
       {
         test: /\.ts$/,
         use: [
+          "babel-loader",
           {
             loader: "ts-loader",
             options: {
@@ -78,6 +80,14 @@ module.exports = {
     // new MiniCssExtractPlugin({
     //   filename: '[contenthash].css'
     // }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "public"),
+          to: "./"
+        }
+      ]
+    }),
     new VueLoaderPlugin(),
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
