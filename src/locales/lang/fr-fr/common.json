@@ -1,0 +1,7 @@
+{
+  "name": "common",
+  "loadingText": "En chargement...",
+  "saveText": "Sauvegarder",
+  "delText": "Supprimer",
+  "resetText": "Réinitialisation"
+}

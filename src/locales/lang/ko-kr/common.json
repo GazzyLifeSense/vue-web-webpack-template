@@ -1,0 +1,7 @@
+{
+  "name": "common",
+  "loadingText": "로드 중...",
+  "saveText": "저장",
+  "delText": "삭제",
+  "resetText": "재설정"
+}

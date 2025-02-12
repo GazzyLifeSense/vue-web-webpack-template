@@ -1,0 +1,7 @@
+{
+  "name": "common",
+  "loadingText": "加载中...",
+  "saveText": "保存",
+  "delText": "删除",
+  "resetText": "重置"
+}

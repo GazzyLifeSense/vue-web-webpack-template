@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-less",
+    "stylelint-config-recommended-vue",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "selector-class-pattern": null,
+    "at-rule-empty-line-before": "never",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "content",
+          "each",
+          "error",
+          "extend",
+          "for",
+          "function",
+          "if",
+          "include",
+          "mixin",
+          "return",
+          "while"
+        ]
+      }
+    ],
+    "comment-empty-line-before": "never",
+    "declaration-empty-line-before": "never",
+    "function-linear-gradient-no-nonstandard-direction": null,
+    "no-descending-specificity": null,
+    "no-empty-source": null,
+    "rule-empty-line-before": "never"
+  }
+}
