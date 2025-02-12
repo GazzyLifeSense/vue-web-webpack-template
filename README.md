@@ -1,12 +1,17 @@
-# A Simple Vue Template for Web Development
+# A Simple Vue&Webpack&Typescript Template for Web Development
+
+## Why Webpack?
+
+ - Learning Purpose
+ - Get deeper knowledge on packing process
 
 ## Speciality
 
-Without complex configuration, simple and easy to use.
+out-of-the-box
 
 ## Integrate
 
-### Web Dev Core Package
+### Core Package
 
 - Vue3
 - Webpack5
