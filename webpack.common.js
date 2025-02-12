@@ -80,20 +80,13 @@ module.exports = {
     // new MiniCssExtractPlugin({
     //   filename: '[contenthash].css'
     // }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, "public"),
-          to: "./"
-        }
-      ]
-    }),
     new VueLoaderPlugin(),
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
       title: "app",
       template: "./src/index.html",
-      filename: "index.html"
+      filename: "index.html",
+      favicon: './public/favicon.ico'
     })
   ]
 }
