@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.development.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.production.js",
     "build:test": "cross-env NODE_ENV=production webpack serve --config webpack.test.js",
-    "preview": "vite preview",
+    "deploy": "docker-compose up --build",
     "check-type": "tsc --watch"
   },
   "devDependencies": {
@@ -77,5 +77,6 @@
     "cz-custom": {
       "config": ".cz-config.json"
     }
-  }
+  },
+  "packageManager": "pnpm@8.6.0"
 }

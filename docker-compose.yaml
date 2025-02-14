@@ -1,0 +1,5 @@
+services:
+  vue-app-webpack-tpl:
+    build: .
+    ports:
+      - 4000:80

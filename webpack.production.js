@@ -29,7 +29,6 @@ module.exports = merge(common, {
     new MiniCSSExtractPlugin({
       filename: "styles/[name]-[contenthash:8].css",
       chunkFilename: "[id].css"
-    }),
-    new BundleAnalyzerPlugin({ analyzerPort: "auto" })
+    })
   ]
 })
